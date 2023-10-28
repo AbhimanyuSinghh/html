@@ -9,11 +9,11 @@ a{
     color:aliceblue;
 }
 a:visited{
-    color: lightgray;
+    color: rgb(211, 211, 211);
 }
 a:hover{
     color: lightcoral;
 }
 a:active{
-    color: lightsalmon;
+    color: rgb(122, 255, 155);
 }
