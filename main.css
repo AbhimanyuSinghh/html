@@ -17,3 +17,9 @@ a:hover{
 a:active{
     color: rgb(122, 255, 155);
 }
+table, tr, th, td, caption {
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
