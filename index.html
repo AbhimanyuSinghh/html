@@ -271,59 +271,62 @@
                 </p>
 
                 <form action="https://httpbin.org/get" method="get">
-                    <p>
-                        <label for="firstName"> First Name:</label>
-                        <input type="text" name="firstName" id="firstName"
-                        placeholder="Type Your First Name Here" autocomplete="on" required autofocus>
-                    </p>
-                    <p>
-                        <label for="lastName"> Last Name:</label>
-                        <input type="text" name="lastName" id="lastName"
-                        placeholder="Type Your Last Name Here" autocomplete="on" required>
-                    </p>
-                    <p>
-                        <label for="password"> Password:</label>
-                        <input type="password" name="password" id="password"
-                        placeholder="Type Your Password Here" required>
-                    </p>
-                    <p>
-                        <label for="phone"> Phone Number:</label>
-                        <input type="tel" name="phone" id="phone"
-                        placeholder="Type phoneNumber Here" 
-                        pattern="[0-9]{3}-[0-9]{10}" required>
-                    </p>
-                    <p>
-                        <label for="decade"> Birth Year:</label>
-                        <input type="number" name="decade" id="decade"
-                        step="1" value="1947">
-                    </p>
-                    <!-- <p>
-                        <label for="coffee">Favourite Coffee</label>
-                        <select name="coffeee" id="coffee" multiple size="5">
-                            <optgroup label="Coffees">
-                                <option value="Regular Coffee">Regular Coffee</option>
-                                <option value="Black Coffee" selected>Black Coffee</option>
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <p>
+                            <label for="firstName"> First Name:</label>
+                            <input type="text" name="firstName" id="firstName"
+                            placeholder="Type Your First Name Here" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="lastName"> Last Name:</label>
+                            <input type="text" name="lastName" id="lastName"
+                            placeholder="Type Your Last Name Here" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="password"> Password:</label>
+                            <input type="password" name="password" id="password"
+                            placeholder="Type Your Password Here" required>
+                        </p>
+                        <p>
+                            <label for="phone"> Phone Number:</label>
+                            <input type="tel" name="phone" id="phone"
+                            placeholder="Type phoneNumber Here" 
+                            pattern="[0-9]{3}-[0-9]{10}" required>
+                        </p>
+                        <p>
+                            <label for="decade"> Birth Year:</label>
+                            <input type="number" name="decade" id="decade"
+                            step="1" value="1947">
+                        </p>
+                        <!-- <p>
+                            <label for="coffee">Favourite Coffee</label>
+                            <select name="coffeee" id="coffee" multiple size="5">
+                                <optgroup label="Coffees">
+                                    <option value="Regular Coffee">Regular Coffee</option>
+                                    <option value="Black Coffee" selected>Black Coffee</option>
+                                    <option value="Iced Coffee">Iced Coffee</option>
+                                </optgroup>
+                                <optgroup label="Trying">
+                                    <option value="Cappuchino">Cappuchino</option>
+                                    <option value="Cold Coffee">Cold Coffee</option>
+                                </optgroup>
+                            </select>
+                        </p> -->
+                        <p>
+                            <label for="coffee">Favourite Coffee</label>
+                            <input type="text" name="coffee" id="coffee"
+                            list="coffee-list">
+                            <datalist id="coffee-list">
+                                <option value="Regular Coffee" selected>Regular Coffee</option>
+                                <option value="Black Coffee">Black Coffee</option>
+                                <option value="Espresso">Espresso</option>
                                 <option value="Iced Coffee">Iced Coffee</option>
-                            </optgroup>
-                            <optgroup label="Trying">
-                                <option value="Cappuchino">Cappuchino</option>
                                 <option value="Cold Coffee">Cold Coffee</option>
-                            </optgroup>
-                        </select>
-                    </p> -->
-                    <p>
-                        <label for="coffee">Favourite Coffee</label>
-                        <input type="text" name="coffee" id="coffee"
-                        list="coffee-list">
-                        <datalist id="coffee-list">
-                            <option value="Regular Coffee" selected>Regular Coffee</option>
-                            <option value="Black Coffee">Black Coffee</option>
-                            <option value="Espresso">Espresso</option>
-                            <option value="Iced Coffee">Iced Coffee</option>
-                            <option value="Cold Coffee">Cold Coffee</option>
-                            <option value="others">others</option>
-                        </datalist>
-                    </p>
+                                <option value="others">others</option>
+                            </datalist>
+                        </p>
+                    </fieldset>
                     
                 </form>
 
