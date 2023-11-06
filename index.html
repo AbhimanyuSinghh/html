@@ -267,7 +267,7 @@
                     Contact Me
                 </h2>
                 <p>
-                    I would like to hear from you
+                    I would like to hear from you, please fill in few details
                 </p>
 
                 <form action="https://httpbin.org/get" method="get">
@@ -326,6 +326,25 @@
                                 <option value="others">others</option>
                             </datalist>
                         </p>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend> What is your favourite food</legend>
+                        <p>
+                            <input type="radio" name="food" id="tacos" value="tacos">
+                            <label for="tacos">Tacos</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="pizza" value="pizza">
+                            <label for="pizza">Pizza</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="Prashadi" value="Prashadi">
+                            <label for="Prashadi">Prashadi</label>
+                        </p>
+                        <!--
+                            here name="food" same for everyone because we need tp select just one option and if we select other, the other get deselected automatically
+                        -->
                     </fieldset>
                     
                 </form>
